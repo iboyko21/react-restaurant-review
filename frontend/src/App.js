@@ -1,7 +1,8 @@
 import React from "react";
 import { Route, Link } from "react-router-dom";
 // import { Switch } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter } from "react-router-dom";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import AddReview from "./components/add-review";
 import Restaurant from "./components/restaurant";
 import RestaurantsList from "./components/restaurants-list";
@@ -19,7 +20,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div>Hello World
 
       <nav className="navbar navbar-expand navbar-dark bg-dark">
         <a href="/restaurants" className="navbar-brand">
@@ -48,7 +49,7 @@ function App() {
       </nav>
 
       <div className="container mt-3">
-        {/* <Switch> */}
+          <BrowserRouter>
           <Route exact path={["/", "/restaurants"]} component={RestaurantsList}/>
           
           <Route path="/restaurants/:id/reiew" render={(props) => ( //using render method instead of component, to be able to pass props
@@ -60,7 +61,7 @@ function App() {
           <Route path="/login" render={(props) => (
             <Login {...props} login={login}/>
           )}/>
-        {/* </Switch> */}
+          </BrowserRouter>
       </div>
 
     </div>

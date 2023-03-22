@@ -2,7 +2,7 @@ import React from "react";
 
 function Restaurant() {
   return (
-    <div className="App">
+    <div>
       Hello World.
     </div>
   );
