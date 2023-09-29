@@ -1,12 +1,12 @@
 import React from "react";
 import { Route, Link } from "react-router-dom";
-// import { Switch } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
-// import "bootstrap/dist/css/bootstrap.min.css";
 import AddReview from "./components/add-review";
 import Restaurant from "./components/restaurant";
 import RestaurantsList from "./components/restaurants-list";
 import Login from "./components/login";
+// import { Switch } from "react-router-dom";
+// import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   // declare user variable and use setUser function to update user
